@@ -343,6 +343,21 @@ body {
   word-wrap: break-word;
 }
 
+.section_subheader {
+  font-size: 16px;
+  font-family: "Questrial", sans-serif;
+  margin: 2vh 0px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.section_description {
+  font-size: 15px;
+  font-family: "Questrial", sans-serif;
+  margin: 2vh 0px;
+  word-wrap: break-word;
+}
+
 .bottom_section {
   margin: 1vh 0px;
   font-size: 14px;
