@@ -344,15 +344,26 @@ body {
   word-wrap: break-word;
 }
 
-.about_section ul {
+.work_experience {
   list-style-type: none;
   text-indent: -10%;
   text-align: left;
   font-size: 15px;
 }
 
-.about_section ul ::before{
+.work_experience ::before{
   content: '✔ ';
+}
+
+.favorites {
+  list-style-type: none;
+  text-indent: -10%;
+  text-align: left;
+  font-size: 15px;
+}
+
+.favorites ::before{
+  content: '❧ ';
 }
 
 .section_subheader {
