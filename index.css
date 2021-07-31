@@ -295,6 +295,7 @@ body {
   padding: 4vh 0px !important;
 }
 
+
 .projects {
   margin-left: -15px;
   /* align section w/ heading above */
@@ -410,6 +411,27 @@ body {
 
 .socials span a {
   font-weight: normal !important;
+}
+
+#navigation button {
+  float: left;
+  position: relative;
+  margin-left: 1%;
+  left: 25%;
+  font-size: 18px;
+  font-family: 'Gill Sans', sans-serif;
+  text-decoration: none;
+  background-color: transparent;
+  color: rgba(252, 127, 3, 1);
+  border: transparent;
+  border-radius: 100%;
+
+}
+
+#navigation button:hover {
+  text-shadow: 0 0 10px rgba(252, 127, 3, 1), 0 0 20px rgba(252, 127, 3, 1), 0 0 30px rgba(252, 152, 3), 0 0 40px rgba(252, 152, 3), 0 0 50px rgba(252, 152, 3), 0 0 60px rgba(252, 152, 3), 0 0 70px rgba(252, 152, 3);
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 #blog_section {

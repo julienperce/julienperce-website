@@ -42,6 +42,15 @@
     </div>
 
     <div id="display">
+      <div class="navigation" id="navigation">
+        <button type="button" onclick="hideTest()" id="meButton">Me</button>
+        <button type="button">Portfolio</button>
+        <button type="button">Education</button>
+        <button type="button">Work + Volunteering</button>
+        <button type="button">Fun Stuff</button>
+      </div>
+
+      
       <div id="work">  
         <div id="blog_section">
         <h1>Blog.</h1>
@@ -50,7 +59,7 @@
         
         <div class="projects" id="work_section">
           
-          <a>
+          <a  id="snapshotTest" >
             <section>
               <div class="section_title">&#11088 Snapshot</div>
                 <div class="about_section">
@@ -257,6 +266,11 @@
         maxColumns: 2,
         useTransform: true
       });
+
+      function hideTest()
+      {
+        document.getElementById("snapshotTest").style.display="none";
+      }
 
       $("document").ready(() => {
         magicProjectsGrid.listen();
