@@ -16,17 +16,40 @@
 
         <div id="main">
             
-            <div class="leftSidebar"  id="leftSidebar" style="display: none;">
+            <div class="leftSidebar fade-in"  id="leftSidebar" style="display: none;">
                 <a class="sidebarText">FR</a>
             </div>
 
-            <div class="middleSidebar" id="middleSidebar" style="display: none;"">
-                <a class="mSidebarText">ABOUT</a>
+            <div class="middleSidebar fade-in" id="middleSidebar" style="display: none;">
+                <ul>
+                    <li class="mSidebarText"><a href="" onclick="testLog();">ABOUT</a></li>
+                    <br>
+                    <li class="mSidebarText"><a href="">EDUCATION</a></li>
+                    <br>
+                    <li class="mSidebarText"><a href="">WORK</a></li>
+                    <br>
+                    <li class="mSidebarText"><a href="">VOLUNTEER</a></li>
+                    <br>
+                    <li class="mSidebarText"><a href="">PORTFOLIO</a></li>
+                    <br>
+                    <li class="mSidebarText"><a href="">FUN</a></li>
+                </ul>
+            </div>
+
+            <div class="mainSidebar fade-in" id="mainSidebar" style="display: none;">
+                <div class="about">
+                    <a>Hello, I'm julien</a>
+                </div>
+                <div class="education">
+                    <a></a>
+                </div>
             </div>
 
         </div>
 
         <script>
+            var currentDisplay = "startPage";
+            
             function sleep(ms) {
                 return new Promise(resolve => setTimeout(resolve, ms));
             }
@@ -51,9 +74,14 @@
                 function bringElts() {
                     document.getElementById("leftSidebar").style.display="block";
                     document.getElementById("middleSidebar").style.display="block";
+                    document.getElementById("mainSidebar").style.display="block";
                 }
                 sleep(4750).then(() => { bringElts(); });
             } 
+
+           /* function updateContent() {
+                break;
+            }*/
         </script>
     </body>
 </html>
