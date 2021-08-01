@@ -1,0 +1,131 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#introDiv {
+    height: 100vw;
+    line-height: 50vw;
+    text-align: center;
+    border: none;
+}
+#introText {
+    color:red;
+    font-size: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+.fade-out {
+    animation: fadeOut linear 4.75s;
+    -webkit-animation: fadeOut linear 4.75s;
+    -moz-animation: fadeOut linear 4.75s;
+    -o-animation: fadeOut linear 4.75s;
+    -ms-animation: fadeOut linear 4.75s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@keyframes vanish {
+    100% {
+        display: none;
+    }
+}
+
+.leftSidebar {
+    height: 100%;
+    width: 7%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 40px;
+    background-color: white;
+}
+    
+.leftSidebar div {
+    padding: 8px;
+    font-size: 24px;
+    display: block;
+    text-align: right !important;
+}
+    
+.sidebarText {
+    text-align: center;
+    font-size: 22px;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middleSidebar {
+    height: 100%;
+    width: 20%;
+    position: absolute;
+    left: 7%;
+    top: 0;
+    padding-top: 40px;
+    background-color: white;
+    border-left: 1px solid gray;
+}
+
+.middleSidebar div {
+    padding: 8px;
+    font-size: 24px;
+    display: block;
+    text-align: right !important;
+}
+    
+.mSidebarText {
+    text-align: center;
+    font-size: 22px;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

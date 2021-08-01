@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JULIEN PERCE.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="flashname()" id="body">
+        
+        <div class="introText" id="introDiv">
+            <span id="introText" class="fade-out">WELCOME TO</span>
+        </div>
+
+        <div id="main">
+            
+            <div class="leftSidebar"  id="leftSidebar" style="display: none;">
+                <a class="sidebarText">FR</a>
+            </div>
+
+            <div class="middleSidebar" id="middleSidebar" style="display: none;"">
+                <a class="mSidebarText">ABOUT</a>
+            </div>
+
+        </div>
+
+        <script>
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            function noScroll() {
+                window.scrollTo(0, 0);
+            }
+            
+            function flashname(){
+                vanishintro();
+                bringMain();
+                document.getElementById("body").style.backgroundColor="white";
+                sleep(1000).then(() => { document.getElementById("introText").innerHTML="JULIEN PERCE"; document.getElementById("introText").style.color="black"; document.getElementById("body").style.backgroundColor="red";
+                sleep(1000).then(() => { document.getElementById("introText").innerHTML="&quot;AN INVITATION&quot;"; document.getElementById("introText").style.color="white"; document.getElementById("body").style.backgroundColor="black"; }) });
+            }
+
+            function vanishintro(){ // make sure our intro text does not come back after fade out animation
+                sleep(4750).then(() => { document.getElementById("introDiv").style.display="none"; });
+            }
+
+            function bringMain(){
+                function bringElts() {
+                    document.getElementById("leftSidebar").style.display="block";
+                    document.getElementById("middleSidebar").style.display="block";
+                }
+                sleep(4750).then(() => { bringElts(); });
+            } 
+        </script>
+    </body>
+</html>
