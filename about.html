@@ -7,6 +7,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="./script.js"></script>
+        
     </head>
     <body id="body">
 
@@ -16,19 +18,19 @@
                 <a class="sidebarText">FR</a>
             </div>
 
-            <div class="middleSidebar" id="middleSidebar" style="display: block;">
+            <div class="middleSidebar fade-in" id="middleSidebar" style="display: block;">
                 <ul>
-                    <li class="mSidebarText"><a href="">ABOUT</a></li>
+                    <li class="mSidebarText"><a onmouseover="hoverSlideOn('aboutItem');" onmouseout="hoverSlideOut('aboutItem')" onclick="slideAway();" id="aboutItem">ABOUT</a></li>
                     <br>
-                    <li class="mSidebarText"><a href="">EDUCATION</a></li>
+                    <li class="mSidebarText"><a onmouseover="hoverSlideOn('educationItem');" onmouseout="hoverSlideOut('educationItem')" id="educationItem">EDUCATION</a></li>
                     <br>
-                    <li class="mSidebarText"><a href="">WORK</a></li>
+                    <li class="mSidebarText"><a onmouseover="hoverSlideOn('workItem');" onmouseout="hoverSlideOut('workItem')" id="workItem">WORK</a></li>
                     <br>
-                    <li class="mSidebarText"><a href="">VOLUNTEER</a></li>
+                    <li class="mSidebarText"><a onmouseover="hoverSlideOn('volunteerItem');" onmouseout="hoverSlideOut('volunteerItem')" id="volunteerItem">VOLUNTEER</a></li>
                     <br>
-                    <li class="mSidebarText"><a href="">PORTFOLIO</a></li>
+                    <li class="mSidebarText"><a onmouseover="hoverSlideOn('portfolioItem');" onmouseout="hoverSlideOut('portfolioItem')" id="portfolioItem">PORTFOLIO</a></li>
                     <br>
-                    <li class="mSidebarText"><a href="">FUN</a></li>
+                    <li class="mSidebarText"><a onmouseover="hoverSlideOn('funItem');" onmouseout="hoverSlideOut('funItem')" id="funItem">FUN</a></li>
                 </ul>
             </div>
 
