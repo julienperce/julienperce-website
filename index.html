@@ -22,9 +22,9 @@
 
             <div class="middleSidebar fade-in" id="middleSidebar" style="display: none;">
                 <ul>
-                    <li class="mSidebarText"><a href="" onclick="testLog();">ABOUT</a></li>
+                    <li class="mSidebarText"><a onclick="slideAway();" id="aboutItem">ABOUT</a></li>
                     <br>
-                    <li class="mSidebarText"><a href="">EDUCATION</a></li>
+                    <li class="mSidebarText"><a onmouseover="hoverSlideOn('educationItem');" onmouseout="hoverSlideOut('educationItem')" id="educationItem">EDUCATION</a></li>
                     <br>
                     <li class="mSidebarText"><a href="">WORK</a></li>
                     <br>
@@ -37,10 +37,17 @@
             </div>
 
             <div class="mainSidebar fade-in" id="mainSidebar" style="display: none;">
-                <div class="about">
-                    <a>Hello, I'm julien</a>
+                <div class="about" id="about">
+                    <h1 id="greetings">"GREETINGS."</h1>
+                    <p id="quickBio">I'm Julien Perce, a high school senior passionate about all things computers. I made this website as an invitation for you to learn a little more about me. 
+                        You can find my socials and contact information on the left-most sidebar. 
+                    </p>
+                    <p id="quickOppInfo">I currently plan to attend a 4-year college in the US starting in the fall of 2022, but if you've got any internship or job opportunities I'd be happy to discuss
+                        them with you prior to summer 2023! 
+                    </p>
+
                 </div>
-                <div class="education">
+                <div class="about">
                     <a></a>
                 </div>
             </div>
@@ -48,8 +55,6 @@
         </div>
 
         <script>
-            var currentDisplay = "startPage";
-            
             function sleep(ms) {
                 return new Promise(resolve => setTimeout(resolve, ms));
             }
@@ -79,9 +84,27 @@
                 sleep(4750).then(() => { bringElts(); });
             } 
 
-           /* function updateContent() {
-                break;
-            }*/
+            function slideAway() {
+                document.getElementById("greetings").style.animationName="slideout";
+                document.getElementById("quickBio").style.animationName="slideout";
+                document.getElementById("quickOppInfo").style.animationName="slideout";
+                sleep(1000).then(() => { document.location.href = "/about.html"});
+            }
+
+            function hoverSlideOn(sidebarItem) {
+                item = document.getElementById(sidebarItem);
+                item.insertAdjacentText("beforeEnd", " >>");
+                item.style.animationName="sidebarSlideOut";
+            }
+
+            function hoverSlideOut(sidebarItem) {
+                item = document.getElementById(sidebarItem)
+                switch (item.innerHTML) {
+                    case "EDUCATION &gt;&gt;":
+                        item.innerHTML="EDUCATION";
+                }
+            }
+
         </script>
     </body>
 </html>
