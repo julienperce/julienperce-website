@@ -27,11 +27,36 @@ function bringMain(){
     sleep(4750).then(() => { bringElts(); });
 } 
 
-function slideAway() {
+function slideAway(page) {
     document.getElementById("greetings").style.animationName="slideout";
     document.getElementById("quickBio").style.animationName="slideout";
     document.getElementById("quickOppInfo").style.animationName="slideout";
-    sleep(1000).then(() => { document.location.href = "/about.html"});
+    
+    switch (page){ 
+        case "about":
+            sleep(1000).then(() => { document.location.href = "./about.html"});
+            break;
+
+        case "education":
+            sleep(1000).then(() => { document.location.href = "./education.html"});
+            break
+
+        case "work":
+            sleep(1000).then(() => { document.location.href = "./work.html"});
+            break;
+        
+        case "volunteer":
+            sleep(1000).then(() => { document.location.href = "./volunteer.html"});
+            break;
+
+        case "projects":
+            sleep(1000).then(() => { document.location.href = "./projects.html"});
+            break;
+        
+        case "fun":
+            sleep(1000).then(() => { document.location.href = "./fun.html"});
+            break;
+    }
 }
 
 function hoverSlideOn(sidebarItem) {
@@ -59,8 +84,8 @@ function hoverSlideOut(sidebarItem) {
             item.innerHTML="VOLUNTEER";
             break;
 
-        case "PORTFOLIO &gt;&gt;": 
-            item.innerHTML="PORTFOLIO";
+        case "PROJECTS &gt;&gt;": 
+            item.innerHTML="PROJECTS";
             break;
 
         case "FUN &gt;&gt;":

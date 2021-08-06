@@ -160,7 +160,7 @@ body {
 
 .middleSidebar {
     height: 100%;
-    width: 25%;
+    width: 35%;
     position: absolute;
     left: 7%;
     top: 0;
@@ -192,9 +192,9 @@ body {
 
 .mainSidebar {
     height: 100%;
-    width: 68%;
+    width: 58%;
     position: absolute;
-    left: 32%;
+    left: 42%;
     right: 0;
     top: 0;
     padding-top: 46px;
@@ -210,7 +210,7 @@ body {
     color: white;
 }
 
-.about h1 {
+.bio h1 {
     color: white;
     font-size: 50px;
     padding-top: 0.45vw;
@@ -239,10 +239,6 @@ body {
     font-size: 26px;
     animation-duration: 2s;
     animation-name: slidein;
-}
-
-.mSidebarText {
-    animation-name: none;
 }
 
 @keyframes slidein {
