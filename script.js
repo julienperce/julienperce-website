@@ -34,27 +34,27 @@ function slideAway(page) {
     
     switch (page){ 
         case "about":
-            sleep(1000).then(() => { document.location.href = "./about.html"});
+            sleep(1000).then(() => { window.location.href = "./about.html"});
             break;
 
         case "education":
-            sleep(1000).then(() => { document.location.href = "./education.html"});
+            sleep(1000).then(() => { window.location.href = "./education.html"});
             break
 
         case "work":
-            sleep(1000).then(() => { document.location.href = "./work.html"});
+            sleep(1000).then(() => { window.location.href = "./work.html"});
             break;
         
         case "volunteer":
-            sleep(1000).then(() => { document.location.href = "./volunteer.html"});
+            sleep(1000).then(() => { window.location.href = "./volunteer.html"});
             break;
 
         case "projects":
-            sleep(1000).then(() => { document.location.href = "./projects.html"});
+            sleep(1000).then(() => { window.location.href = "./projects.html"});
             break;
         
         case "fun":
-            sleep(1000).then(() => { document.location.href = "./fun.html"});
+            sleep(1000).then(() => { window.location.href = "./fun.html"});
             break;
     }
 }
@@ -93,3 +93,12 @@ function hoverSlideOut(sidebarItem) {
             break;
     }
 }
+
+window.addEventListener('beforeunload', function (e) {
+    // Cancel the event
+    e.preventDefault(); // If you prevent default behavior in Mozilla Firefox prompt will always be shown
+    // Chrome requires returnValue to be set
+    console.log('refreshing');
+    e.returnValue = '';
+    delete e['returnValue'];
+});
