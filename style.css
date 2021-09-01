@@ -15,17 +15,17 @@ svg|a:hover {
 }
 
 .stoptext {
-    font-size: 0.05vw;
+    font-size: 1px;
 }
 
 .stopnotbuilttext {
-    font-size: 0.05vw;
+    font-size: 1px;
     font-style: italic;
 }
 
 .lineendtext {
     fill: white;
-    font-size: 0.055vw;
+    font-size: 1px;
 }
 
 .volline {
