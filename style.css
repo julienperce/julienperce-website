@@ -7,7 +7,9 @@ svg|a:hover {
 }
 
 .descwindow {
-    fill:green;
+    fill: rgba(202, 204, 203);
+    stroke:black;
+    stroke-width: 0.25px;
 }
 
 .midnode {
