@@ -66,6 +66,10 @@ svg|a:hover {
     fill: rgba(79, 20, 128);
 }
 
+.inthobline {
+    fill: rgba(180, 184, 191);
+}
+
 
 .volstop{
     fill: rgba(247, 45, 200);
