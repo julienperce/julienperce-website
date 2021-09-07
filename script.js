@@ -1,7 +1,15 @@
 function showDesc(stop) {
-    document.getElementById(stop).style.visibility = "visible";
+    eltCnt = document.getElementsByClassName("lfcDescWindow").length;// elt count per class
+    for (i = 0; i < eltCnt; i++)
+    {
+        document.getElementsByClassName("lfcDescWindow")[i].style.visibility = "visible";
+    }
 }
 
 function hideDesc(stop) {
-    document.getElementById(stop).style.visibility = "hidden";
+    eltCnt = document.getElementsByClassName("lfcDescWindow").length;// elt count per class
+    for (i = 0; i < eltCnt; i++)
+    {
+        document.getElementsByClassName("lfcDescWindow")[i].style.visibility = "hidden";
+    }
 }

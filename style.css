@@ -12,6 +12,10 @@ svg|a:hover {
     stroke-width: 0.25px;
 }
 
+.desctitle {
+    font-size: 2px;
+}
+
 .midnode {
     fill: white;
 }
