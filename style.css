@@ -13,7 +13,11 @@ svg|a:hover {
 }
 
 .desctitle {
-    font-size: 2px;
+    font-size: 1.8px;
+}
+
+.desctext {
+    font-size: 1px;
 }
 
 .midnode {
