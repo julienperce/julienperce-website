@@ -12,7 +12,7 @@
     <body>
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 
-            
+            <image href="./assets/chicagopix.png" x="0" y="-27" width="100" height="100" opacity="0.25"></image>
 
             <rect class="volline" x="19" y="19.5" width="16" height="1" />
             <rect class="volline" x="18.5" y="8.3" width="1" height="12.2" />
@@ -91,8 +91,8 @@
 
                 <circle class="workstop" cx="65" cy="20" r="0.5" /> <!--start of work line-->
                 <circle class="midnode" cx="65" cy="20" r="0.3" />
-                <circle class="workstop" cx="73" cy="20" r="0.5" />
-                <circle class="midnode" cx="73" cy="20" r="0.3" />
+                <circle class="workstop" cx="73" cy="20" r="0.5" onmouseover="showDesc('intDescWindow');" onmouseout="hideDesc('intDescWindow');"/>
+                <circle class="midnode" cx="73" cy="20" r="0.3" onmouseover="showDesc('intDescWindow');" onmouseout="hideDesc('intDescWindow');"/>
 
                 <circle class="edustop" cx="65" cy="30" r="0.5" /> <!--start of education line-->
                 <circle class="midnode" cx="65" cy="30" r="0.3" />
@@ -100,8 +100,8 @@
                 <circle class="midnode" cx="73" cy="30" r="0.3" onmouseover="showDesc('lfcDescWindow');" onmouseout="hideDesc('lfcDescWindow');"/>
                 <circle class="edustop" cx="81" cy="30" r="0.5" onmouseover="showDesc('cs50DescWindow');" onmouseout="hideDesc('cs50DescWindow');"/>
                 <circle class="midnode" cx="81" cy="30" r="0.3" onmouseover="showDesc('cs50DescWindow');" onmouseout="hideDesc('cs50DescWindow');"/>
-                <circle class="edustop" cx="89" cy="30" r="0.5" />
-                <circle class="midnode" cx="89" cy="30" r="0.3" />
+                <circle class="edustop" cx="89" cy="30" r="0.5" onmouseover="showDesc('collegeWindow');" onmouseout="hideDesc('collegeWindow');"/>
+                <circle class="midnode" cx="89" cy="30" r="0.3" onmouseover="showDesc('collegeWindow');" onmouseout="hideDesc('collegeWindow');"/>
 
                 <circle class="aboutstop" cx="35" cy="30" r="0.5" /> <!--start of about line-->
                 <circle class="midnode" cx="35" cy="30" r="0.3" />
@@ -112,8 +112,8 @@
 
                 <circle class="intrastop" cx="45" cy="30" r="0.5" /> <!--start of intracurriculars line-->
                 <circle class="midnode" cx="45" cy="30" r="0.3" />
-                <circle class="intrastop" cx="45" cy="37" r="0.5" /> 
-                <circle class="midnode" cx="45" cy="37" r="0.3" />
+                <circle class="intrastop" cx="45" cy="37" r="0.5" onmouseover="showDesc('MEJDescWindow');" onmouseout="hideDesc('MEJDescWindow');"/> 
+                <circle class="midnode" cx="45" cy="37" r="0.3" onmouseover="showDesc('MEJDescWindow');" onmouseout="hideDesc('MEJDescWindow');"/>
                 <circle class="intrastop" cx="35" cy="37" r="0.5" /> 
                 <circle class="midnode" cx="35" cy="37" r="0.3" />
                 <circle class="intrastop" cx="25" cy="37" r="0.5" /> 
@@ -181,25 +181,81 @@
 
             <text x="57" y="36.25" class="stoptext">Programming</text>
 
-            <polygon id="lfc" class="descwindow lfcDescWindow" points="73, 28 72, 27 55, 27 55, 14 76, 14 76, 27 74, 27" style="visibility: hidden;"></polygon>
-            <text x="56" y="16" class="desctitle lfcDescWindow" style="visibility: hidden;">Lycee Francais de Chicago</text>
-            <text x="59.5" y="17.5" class="desctext lfcDescWindow" style="visibility: hidden; font-style: italic;"> &nbsp; ~ Sep 2007 - June 2022 ~ &nbsp;</text>
-            <text x="56" y="19" class="desctext lfcDescWindow" style="visibility: hidden;">- PreK-12 in a fully bilingual environment</text>
-            <text x="56" y="20.5" class="desctext lfcDescWindow" style="visibility: hidden;">- Followed French Bacalaureate "OIB" Track</text>
-            <text x="56" y="22" class="desctext lfcDescWindow" style="visibility: hidden; font-weight: bold;">Distinctions:</text>
-            <text x="56" y="23.5" class="desctext lfcDescWindow" style="visibility: hidden; ">- 3.98 Unweighted GPA</text>
-            <text x="56" y="25" class="desctext lfcDescWindow" style="visibility: hidden; ">- 2017 AMC 8 Highest Scorer</text>
+            <polygon id="sumIntern" class="descwindow intDescWindow" points="71, 20 70, 21 70, 32 37, 32 37, 7 70, 7 70, 19"style="visibility: hidden;"></polygon> 
+            <text x="44" y="9" class="desctitle intDescWindow" style="visibility: hidden;">Summer Internship at LFC</text>
+            <text x="49.5" y="10.5" class="desctext intDescWindow" style="visibility: hidden; font-style: italic;">  ~ June - July 2021 ~ &nbsp;</text>
+            <text x="38" y="12" class="desctext intDescWindow" style="visibility: hidden;">- Sole unpaid intern at Lycee Francais de Chicago's IT Department</text>
+            <text x="38" y="13.5" class="desctext intDescWindow" style="visibility: hidden; font-weight: bold;">Responsibilities:</text>
+            <text x="38" y="15" class="desctext intDescWindow" style="visibility: hidden;">- Unboxed and set up 50+ laptops</text>
+            <text x="38" y="16.5" class="desctext intDescWindow" style="visibility: hidden;">- Installed operating systems, programs and antiviruses on many systems</text>
+            <text x="39.5" y="17.5" class="desctext intDescWindow" style="visibility: hidden;">at a time</text>
+            <text x="38" y="19" class="desctext intDescWindow" style="visibility: hidden;">- Distributed new laptops to staff members whilst showing them new features</text>
+            <text x="38" y="20.5" class="desctext intDescWindow" style="visibility: hidden;">- Inventoried various old & new electronics</text>
+            <text x="38" y="22" class="desctext intDescWindow" style="visibility: hidden;">- Wiped & updated 100+ Chromebooks, and tested each one for hardware</text>
+            <text x="39.5" y="23.5" class="desctext intDescWindow" style="visibility: hidden;">and software faults</text>
+            <text x="38" y="25" class="desctext intDescWindow" style="visibility: hidden; font-weight: bold;">Accomplishments & successes:</text>
+            <text x="38" y="26.5" class="desctext intDescWindow" style="visibility: hidden;">- Located, organized, and inventoried 100+ electronics worth $50,000+ total</text>
+            <text x="38" y="28" class="desctext intDescWindow" style="visibility: hidden;">- Significantly reduced the department's workload during a crucial period</text>
+            <text x="38" y="29.5" class="desctext intDescWindow" style="visibility: hidden;">- Efficiently led the early distribution of laptops to staff</text>
+            <text x="38" y="31" class="desctext intDescWindow" style="visibility: hidden;">- Set up classroom tech, made sure it was all ready for back to school</text>
 
-            <polygon id="cs50" class="descwindow cs50DescWindow" points="81, 28 80, 27 63, 27 63, 14 84, 14 84, 27 82, 27" style="visibility: hidden;"></polygon>
-            <text x="69" y="16" class="desctitle cs50DescWindow" style="visibility: hidden;">CS50x 2021</text>
-            <text x="69" y="17.5" class="desctext cs50DescWindow" style="visibility: hidden; font-style: italic;">  ~ Spring - Fall 2021 ~ &nbsp;</text>
-            <text x="64" y="19" class="desctext cs50DescWindow" style="visibility: hidden;">Following Harvard's introductory computer</text>
-            <text x="65.5" y="20" class="desctext cs50DescWindow" style="visibility: hidden;">science course, CS50, through EdX</text>
-            <text x="64" y="21.5" class="desctext cs50DescWindow" style="visibility: hidden; font-weight: bold;">Skills & topics learned:</text>
-            <text x="64" y="23" class="desctext cs50DescWindow" style="visibility: hidden; ">- C</text>
-            <text x="64" y="24.5" class="desctext cs50DescWindow" style="visibility: hidden; ">- Data Structures & Memory</text>
-            <text x="64" y="26" class="desctext cs50DescWindow" style="visibility: hidden; ">- Time & Space complexities</text>
-            <!--todo finish this descwindow-->
+            
+            <polygon id="lfc" class="descwindow lfcDescWindow" points="73, 28 72, 27 55, 27 55, 12 76, 12 76, 27 74, 27" style="visibility: hidden;"></polygon>
+            <text x="56" y="14" class="desctitle lfcDescWindow" style="visibility: hidden;">Lycee Francais de Chicago</text>
+            <text x="59.5" y="15.5" class="desctext lfcDescWindow" style="visibility: hidden; font-style: italic;"> &nbsp; ~ Sep 2007 - June 2022 ~ &nbsp;</text>
+            <text x="56" y="17" class="desctext lfcDescWindow" style="visibility: hidden;">- PreK-12 in a fully bilingual environment</text>
+            <text x="56" y="18.5" class="desctext lfcDescWindow" style="visibility: hidden;">- Followed French Bacalaureate "OIB" Track</text>
+            <text x="56" y="20" class="desctext lfcDescWindow" style="visibility: hidden; font-weight: bold;">Distinctions:</text>
+            <text x="56" y="21.5" class="desctext lfcDescWindow" style="visibility: hidden; ">- 3.98 Unweighted GPA</text>
+            <text x="56" y="23" class="desctext lfcDescWindow" style="visibility: hidden; ">- 2017 AMC 8 Highest Scorer</text>
+            <text x="56" y="24.5" class="desctext lfcDescWindow" style="visibility: hidden; ">- High School Student Government Executive</text>
+            <text x="57.5" y="25.5" class="desctext lfcDescWindow" style="visibility: hidden; ">Branch</text>
+            <text x="60.75" y="25.5" class="desctext lfcDescWindow" style="visibility: hidden; font-style: italic;">(two consecutive terms)</text>
+
+            <polygon id="cs50" class="descwindow cs50DescWindow" points="81, 28 80, 27 63, 27 63, 3 84, 3 84, 27 82, 27" style="visibility: hidden;"></polygon>
+            <text x="69" y="5" class="desctitle cs50DescWindow" style="visibility: hidden;">CS50x 2021</text>
+            <text x="69" y="6.5" class="desctext cs50DescWindow" style="visibility: hidden; font-style: italic;">  ~ Spring - Fall 2021 ~ &nbsp;</text>
+            <text x="64" y="8" class="desctext cs50DescWindow" style="visibility: hidden;">Following Harvard's introductory computer</text>
+            <text x="65.5" y="9" class="desctext cs50DescWindow" style="visibility: hidden;">science course, CS50, through EdX</text>
+            <text x="64" y="10.5" class="desctext cs50DescWindow" style="visibility: hidden; font-weight: bold;">Skills & topics learned:</text>
+            <text x="64" y="12" class="desctext cs50DescWindow" style="visibility: hidden; ">- C</text>
+            <text x="64" y="13.5" class="desctext cs50DescWindow" style="visibility: hidden; ">- Data Structures & Memory</text>
+            <text x="64" y="15" class="desctext cs50DescWindow" style="visibility: hidden; ">- Time & Space complexities</text>
+            <text x="64" y="16.5" class="desctext cs50DescWindow" style="visibility: hidden; ">- Python</text>
+            <text x="64" y="18" class="desctext cs50DescWindow" style="visibility: hidden; ">- csv, txt reading and writing </text>
+            <text x="64" y="19.5" class="desctext cs50DescWindow" style="visibility: hidden; ">- HTML, JS, CSS</text>
+            <text x="64" y="21" class="desctext cs50DescWindow" style="visibility: hidden; ">- Flask</text>
+            <text x="64" y="22.5" class="desctext cs50DescWindow" style="visibility: hidden; ">- Computational thinking, problem solving, </text>
+            <text x="65.5" y="23.5" class="desctext cs50DescWindow" style="visibility: hidden; ">debugging</text>
+            <text x="64" y="25" class="desctext cs50DescWindow" style="visibility: hidden; ">- Ethics of teaching and learning, both generally </text>
+            <text x="65.5" y="26" class="desctext cs50DescWindow" style="visibility: hidden; ">and applied to the field of Computer Science</text>
+            
+            <polygon id="college" class="descwindow collegeWindow" points="89, 28 88, 27 82, 27 82, 20 96, 20 96, 27 90, 27" style="visibility: hidden;"></polygon>
+            <text x="86" y="22.5" class="desctitle collegeWindow" style="visibility: hidden;">College</text>
+            <text x="82.5" y="24" class="desctext collegeWindow" style="visibility: hidden; font-style: italic;"> &nbsp; ~ to be determined...</text>
+            <text x="84" y="25" class="desctext collegeWindow" style="visibility: hidden; font-style: italic;"> &nbsp; check back summer '22! ~ &nbsp;</text>
+            
+
+            <polygon id="MEJ" class="descwindow MEJDescWindow" points="45, 35 44, 34 28, 34 28, 6 58, 6 58, 34 46, 34" style="visibility: hidden;"></polygon>
+            <text x="29" y="8" class="desctitle MEJDescWindow" style="visibility: hidden;">MATh.en.JEANS</text>
+            <image class="descwindow MEJDescWindow" href="./assets/youngJP.jpg" x="47" y="7" width="10" height="10" style="visibility: hidden;"></image>
+            <text x="47.5" y="18" class="imgdesc MEJDescWindow" style="visibility: hidden; font-style: italic;">A young Julien Perce</text>
+            <text x="47.5" y="19" class="imgdesc MEJDescWindow" style="visibility: hidden; font-style: italic;">(6th grade), at Math en</text>
+            <text x="47.5" y="20" class="imgdesc MEJDescWindow" style="visibility: hidden; font-style: italic;">Jeans' first international</text>
+            <text x="47.5" y="21" class="imgdesc MEJDescWindow" style="visibility: hidden; font-style: italic;">congress in Ottawa.</text>
+            <text x="29" y="9.5" class="desctext MEJDescWindow" style="visibility: hidden;">- MATh.en.JEANS is a yearly mathematical</text>
+            <text x="29" y="10.5" class="desctext MEJDescWindow" style="visibility: hidden;">competition, in which French schools from</text>
+            <text x="29" y="11.5" class="desctext MEJDescWindow" style="visibility: hidden;">across the world pair groups of students</text>
+            <text x="29" y="12.5" class="desctext MEJDescWindow" style="visibility: hidden;">between establishments. </text>
+            <text x="29" y="14" class="desctext MEJDescWindow" style="visibility: hidden;">- The groups work together all year on</text>
+            <text x="30.5" y="15" class="desctext MEJDescWindow" style="visibility: hidden;">complex problems posed by professional</text>
+            <text x="30.5" y="16" class="desctext MEJDescWindow" style="visibility: hidden;">mathematicians.</text>
+            <text x="29" y="17.5" class="desctext MEJDescWindow" style="visibility: hidden;">- In April/May of each year, the groups all</text>
+            <text x="30.5" y="18.5" class="desctext MEJDescWindow" style="visibility: hidden;">travel to a congress hosted by a member</text>
+            <text x="30.5" y="19.5" class="desctext MEJDescWindow" style="visibility: hidden;">school. They present their solutions to</text>
+            <text x="30.5" y="20.5" class="desctext MEJDescWindow" style="visibility: hidden;">be judged by the same mathematicians</text>
+            <text x="30.5" y="21.5" class="desctext MEJDescWindow" style="visibility: hidden;">who posed the problems. </text>
+            <!--todo finish this window-->
         </svg>
             
 
