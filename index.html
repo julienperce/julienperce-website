@@ -70,10 +70,8 @@
                 
                 <circle class="projstop" cx="50" cy="20" r="0.5" /> <!--start of project line-->
                 <circle class="midnode" cx="50" cy="20" r="0.3" />
-                <circle class="projstop" cx="55.65" cy="14.45" r="0.5" /> 
-                <circle class="midnode" cx="55.65" cy="14.45" r="0.3" />
-                <circle class="projstop" cx="65" cy="14.45" r="0.5" /> 
-                <circle class="midnode" cx="65" cy="14.45" r="0.3" />
+                
+                
                 <circle class="projstop" cx="73" cy="14.45" r="0.5" /> 
                 <circle class="midnode" cx="73" cy="14.45" r="0.3" />
                 <circle class="projstop" cx="81" cy="14.45" r="0.5" /> 
@@ -129,6 +127,7 @@
             </a>
             
             <!--a's for clickable hyperlinks-->
+            <!--clickable socials/contacts-->
             <a href="https://github.com/julienperce/" target="_blank">
                 <circle class="contactstop" cx="38" cy="3.45" r="0.5" onmouseover="showDesc('gthbDescWindow');" onmouseout="hideDesc('gthbDescWindow');"/> <!--socials-->
                 <circle class="midnode" cx="38" cy="3.45" r="0.3" onmouseover="showDesc('gthbDescWindow');" onmouseout="hideDesc('gthbDescWindow');"/>
@@ -149,6 +148,16 @@
                 <circle class="contactstop" cx="59.5" cy="6.35" r="0.5" onmouseover="showDesc('persEmlDescWindow');" onmouseout="hideDesc('persEmlDescWindow');"/> 
                 <circle class="midnode" cx="59.5" cy="6.35" r="0.3" onmouseover="showDesc('persEmlDescWindow');" onmouseout="hideDesc('persEmlDescWindow');"/>
             </a>
+            <!--clickable projects-->
+            <a href="https://github.com/julienperce/julienperce.github.io" target="_blank">
+                <circle class="projstop" cx="55.65" cy="14.45" r="0.5" onmouseover="showDesc('webSrcDescWindow');" onmouseout="hideDesc('webSrcDescWindow');"/> 
+                <circle class="midnode" cx="55.65" cy="14.45" r="0.3" onmouseover="showDesc('webSrcDescWindow');" onmouseout="hideDesc('webSrcDescWindow');"/>
+            </a>
+            <a href="https://github.com/julienperce/new-snake-project" target="_blank">
+                <circle class="projstop" cx="65" cy="14.45" r="0.5" onmouseover="showDesc('snk31DescWindow');" onmouseout="hideDesc('snk31DescWindow');"/> 
+                <circle class="midnode" cx="65" cy="14.45" r="0.3" onmouseover="showDesc('snk31DescWindow');" onmouseout="hideDesc('snk31DescWindow');"/>
+            </a>
+
             <text x="24.25" y="19" class="stoptext">KEEN Chicago</text>
             <text x="15" y="21.5" class="stoptext">My Block, My Hood,</text>
             <text x="17.25" y="22.5" class="stoptext">My City</text>
@@ -160,13 +169,13 @@
             <text x="48.75" y="5.35" class="stoptext">Email (School)</text>
             <text x="56.25" y="7.85" class="stoptext">Email (Personal)</text>
             <text x="63" y="6.7" class="lineendtext">&nbsp; ▶ Contacts</text>
-            <text x="36.7" y="2.55" class="stoptext">Github</text>
+            <text x="36.7" y="2.55" class="stoptext">GitHub</text>
             <text x="31.15" y="4.95" class="stoptext">Instagram</text>
             <text x="26.6" y="2.55" class="stoptext">Spotify</text>
             <text x="19.45" y="3.75" class="lineendtext">&nbsp; Socials ◀ &nbsp</text>
 
             <text x="54.15" y="13.35" class="stoptext">./web/src</text>
-            <text x="62.65" y="16" class="stoptext">Snake 3001</text>
+            <text x="62.65" y="16" class="stoptext">SNAKE 3001</text>
             <text x="69.25" y="13.35" class="stoptext">Summer Code Jam</text>
             <text x="77.5" y="16" class="stoptext">Hacktoberfest 2020</text>
             <text x="86.75" y="13.35" class="stopnotbuilttext">In progress</text>
@@ -194,7 +203,7 @@
             <text x="57" y="36.25" class="stoptext">Programming</text>
 
             <polygon id="gthb" class="descwindow gthbDescWindow" points="38, 4.45 39, 5.45 48, 5.45 48, 7.95 28, 7.95 28, 5.45 37, 5.45" style="visibility: hidden;"></polygon> 
-            <text x="29" y="6.95" class="desctext gthbDescWindow" style="visibility: hidden; font-style: italic;" >Click the stop to be redirected to my Github!</text>
+            <text x="29" y="6.95" class="desctext gthbDescWindow" style="visibility: hidden; font-style: italic;" >Click the stop to be redirected to my GitHub!</text>
 
             <polygon id="inst" class="descwindow instDescWindow" points="33, 4.45 34, 5.45 44, 5.45 44, 7.95 23, 7.95 23, 5.45 32, 5.45" style="visibility: hidden;"></polygon> 
             <text x="24" y="6.95" class="desctext instDescWindow" style="visibility: hidden; font-style: italic;" >Click the stop to be redirected to my Instagram!</text>
@@ -207,7 +216,39 @@
             
             <polygon id="persEml" class="descwindow persEmlDescWindow" points="59.5, 7.35 60.5, 8.35 73, 8.35 73, 10.85 47, 10.85 47, 8.35 58.5, 8.35" style="visibility: hidden;"></polygon> 
             <text x="48" y="9.85" class="desctext persEmlDescWindow" style="visibility: hidden; font-style: italic;" >Click the stop to send me an email on my personal account!</text>
+
+            <polygon id="websrc" class="descwindow webSrcDescWindow" points="55.65, 15.45 56.65, 16.45 67.65, 16.45 67.65, 28.45 45.65, 28.45 45.65, 16.45 54.65, 16.45" style="visibility: hidden;"></polygon>
+            <text x="53.15" y="18.45" class="desctitle webSrcDescWindow" style="visibility: hidden;">./web/src</text>
+            <text x="46.65" y="19.95" class="desctext webSrcDescWindow" style="visibility: hidden; font-weight: bold;">Click the stop to see the source code repo</text>
+            <text x="48.15" y="20.95" class="desctext webSrcDescWindow" style="visibility: hidden; font-weight: bold;">for this website!</text>
+            <text x="46.65" y="22.45" class="desctext webSrcDescWindow" style="visibility: hidden;">- About the website:</text>
+            <text x="48.15" y="23.45" class="desctext webSrcDescWindow" style="visibility: hidden;">- Only one page of HTML</text>
+            <text x="58.95" y="23.45" class="desctext webSrcDescWindow" style="visibility: hidden; font-style: italic;">(#onepagelove)</text>
+            <text x="48.15" y="24.45" class="desctext webSrcDescWindow" style="visibility: hidden;">- The whole site is contained in one large svg</text>
+            <text x="48.15" y="25.45" class="desctext webSrcDescWindow" style="visibility: hidden;">- Written entirely in native HTML, CSS & JS</text>
+            <text x="48.15" y="26.45" class="desctext webSrcDescWindow" style="visibility: hidden;">- ___ lines of code, ____ characters</text>
+            <text x="48.15" y="27.45" class="desctext webSrcDescWindow" style="visibility: hidden;">- Hosted on GitHub Pages</text>
             
+            <polygon id="snk31" class="descwindow snk31DescWindow" points="65, 15.45 64, 16.45 36.5, 16.45 36.5, 35.95 77.5, 35.95 77.5, 16.45 66, 16.45" style="visibility: hidden;"></polygon>
+            <image class="descwindow snk31DescWindow" href="./assets/snk31title.png" x="37" y="17" height="18.5" width="18.5" style="visibility: hidden;"></image>
+            <text x="61.5" y="18.45" class="desctitle snk31DescWindow" style="visibility: hidden;">SNAKE 3001</text>
+            <text x="56" y="19.95" class="desctext snk31DescWindow" style="visibility: hidden; font-weight: bold;">Click the stop to see the source code repo for the</text>
+            <text x="57.5" y="20.95" class="desctext snk31DescWindow" style="visibility: hidden; font-weight: bold;">PyGame game I made, </text>
+            <text x="67.5" y="20.95" class="desctext snk31DescWindow" style="visibility: hidden; font-weight: bold; font-style: italic;">SNAKE 3001!</text>
+            <text x="56" y="22.45" class="desctext snk31DescWindow" style="visibility: hidden;">About the game:</text>
+            <text x="57.5" y="23.45" class="desctext snk31DescWindow" style="visibility: hidden;">- My take on the classic game</text>
+            <text x="69.75" y="23.45" class="desctext snk31DescWindow" style="visibility: hidden; font-style: italic;">Snake,</text>
+            <text x="72.5" y="23.45" class="desctext snk31DescWindow" style="visibility: hidden;">where</text>
+            <text x="59" y="24.45" class="desctext snk31DescWindow" style="visibility: hidden;">players have an added constraint in which</text>
+            <text x="59" y="25.45" class="desctext snk31DescWindow" style="visibility: hidden;">they may only eat the food of a certain</text>
+            <text x="59" y="26.45" class="desctext snk31DescWindow" style="visibility: hidden;">color, corresponding to the sequence</text>
+            <text x="59" y="27.45" class="desctext snk31DescWindow" style="visibility: hidden;">of colors in a rainbow.</text>
+            <text x="57.5" y="29.15" class="desctext snk31DescWindow" style="visibility: hidden;">- Entirely PyGame + Python Standard Library</text>
+            <text x="57.5" y="30.65" class="desctext snk31DescWindow" style="visibility: hidden;">- 689 lines of code, 28114 characters</text>
+            <text x="57.5" y="32.15" class="desctext snk31DescWindow" style="visibility: hidden;">- All art drawn & music composed by me</text>
+            <text x="59" y="33.15" class="desctext snk31DescWindow" style="visibility: hidden;">unless otherwise specified</text>
+            <text x="57.5" y="34.65" class="desctext snk31DescWindow" style="visibility: hidden;">- Additional software: GIMP, Ableton Live</text>
+
             <polygon id="sumIntern" class="descwindow intDescWindow" points="71, 20 70, 21 70, 32 37, 32 37, 7 70, 7 70, 19" style="visibility: hidden;"></polygon> 
             <text x="44" y="9" class="desctitle intDescWindow" style="visibility: hidden;">Summer Internship at LFC</text>
             <text x="49.5" y="10.5" class="desctext intDescWindow" style="visibility: hidden; font-style: italic;">  ~ June - July 2021 ~ &nbsp;</text>
@@ -325,7 +366,7 @@
             <text x="18.5" y="30.5" class="desctext MUNDescWindow" style="visibility: hidden;">and Artifical Intelligence in an ever-evolving world</text>
             <text x="17" y="31.5" class="desctext MUNDescWindow" style="visibility: hidden;">- Speculated a global Covid-19 outbreak as a crisis scenario</text>
             <text x="18.5" y="32.5" class="desctext MUNDescWindow" style="visibility: hidden;">discussing how world leaders could deal with a such circumstance.</text>
-            <text x="18.5" y="33.5" class="desctext MUNDescWindow" style="visibility: hidden; font-style: italic;">This exact situation in fact did take place, less than six weeks later.</text>
+            <text x="18.5" y="33.5" class="desctext MUNDescWindow" style="visibility: hidden; font-style: italic;">This exact situation did in fact take place, less than six weeks later.</text>
 
         </svg>
             
