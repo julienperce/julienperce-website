@@ -108,8 +108,8 @@
                 <circle class="midnode" cx="35" cy="37" r="0.3" onmouseover="showDesc('GESDescWindow');" onmouseout="hideDesc('GESDescWindow');"/>
                 <circle class="intrastop" cx="25" cy="37" r="0.5" onmouseover="showDesc('MUNDescWindow');" onmouseout="hideDesc('MUNDescWindow');"/> 
                 <circle class="midnode" cx="25" cy="37" r="0.3" onmouseover="showDesc('MUNDescWindow');" onmouseout="hideDesc('MUNDescWindow');"/>
-                <circle class="intrastop" cx="15" cy="37" r="0.5" /> 
-                <circle class="midnode" cx="15" cy="37" r="0.3" />
+                <circle class="intrastop" cx="15" cy="37" r="0.5" onmouseover="showDesc('CHNDescWindow');" onmouseout="hideDesc('CHNDescWindow');"/> 
+                <circle class="midnode" cx="15" cy="37" r="0.3" onmouseover="showDesc('CHNDescWindow');" onmouseout="hideDesc('CHNDescWindow');"/>
 
                 <circle class="inthobstop" cx="56" cy="30" r="0.5" /> <!--start of interests+hobbies branch-->
                 <circle class="midnode" cx="56" cy="30" r="0.3" />
@@ -367,6 +367,16 @@
             <text x="17" y="31.5" class="desctext MUNDescWindow" style="visibility: hidden;">- Speculated a global Covid-19 outbreak as a crisis scenario</text>
             <text x="18.5" y="32.5" class="desctext MUNDescWindow" style="visibility: hidden;">discussing how world leaders could deal with a such circumstance.</text>
             <text x="18.5" y="33.5" class="desctext MUNDescWindow" style="visibility: hidden; font-style: italic;">This exact situation did in fact take place, less than six weeks later.</text>
+
+            <polygon id="chinese" class="descwindow CHNDescWindow" points="15, 36 14, 35 5, 35 5, 19 36, 19 36, 35 16, 35" style="visibility: hidden;"></polygon>
+            <text x="12.5" y="21" class="desctitle CHNDescWindow" style="visibility: hidden;">中文 - Chinese</text>
+            <text x="16.5" y="22.5" class="desctext CHNDescWindow" style="visibility: hidden; font-style: italic;">  ~ 对不起,我的中文不好 ~ &nbsp;</text>
+            <text x="10.5" y="24" class="desctext CHNDescWindow" style="visibility: hidden;">- Studied Chinese for fun after school in primary school</text>
+            <text x="10.5" y="25.5" class="desctext CHNDescWindow" style="visibility: hidden;">- Offically took Mandarin as an elective starting in 9th grade</text>
+            <text x="10.5" y="27" class="desctext CHNDescWindow" style="visibility: hidden;">- In 9th grade, I also participated in an exchange with a Chinese High School,</text>
+            <text x="12" y="28" class="desctext CHNDescWindow" style="visibility: hidden;">where I was extremely fortunate to be able to travel to China, and</text>
+            <text x="12" y="29" class="desctext CHNDescWindow" style="visibility: hidden;">discover its amazing culture and people.</text>
+            <image class="descwindow CHNDescWindow" href="./assets/posted.JPG" x="9" y="23" width="10" height="10" style="visibility: hidden;"></image>
 
         </svg>
             
