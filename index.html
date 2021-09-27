@@ -90,8 +90,8 @@
 
                 <circle class="aboutstop" cx="35" cy="30" r="0.5" /> <!--start of about line-->
                 <circle class="midnode" cx="35" cy="30" r="0.3" />
-                <circle class="aboutstop" cx="27" cy="30" r="0.5" /> 
-                <circle class="midnode" cx="27" cy="30" r="0.3" />
+                <circle class="aboutstop" cx="27" cy="30" r="0.5" onmouseover="showDesc('aboutDescWindow');" onmouseout="hideDesc('aboutDescWindow');"/> 
+                <circle class="midnode" cx="27" cy="30" r="0.3" onmouseover="showDesc('aboutDescWindow');" onmouseout="hideDesc('aboutDescWindow');"/>
                 <circle class="aboutstop" cx="19" cy="30" r="0.5" /> 
                 <circle class="midnode" cx="19" cy="30" r="0.3" />
 
@@ -362,7 +362,12 @@
             <text x="86" y="22.5" class="desctitle collegeWindow" style="visibility: hidden;">College</text>
             <text x="82.5" y="24" class="desctext collegeWindow" style="visibility: hidden; font-style: italic;"> &nbsp; ~ to be determined...</text>
             <text x="84" y="25" class="desctext collegeWindow" style="visibility: hidden; font-style: italic;"> &nbsp; check back summer '22! ~ &nbsp;</text>
-            
+          
+            <polygon id="about" class="descwindow aboutDescWindow" points="28, 30 29, 29 29, 15 70, 15 70, 45 29, 45 29, 31" style="visibility: hidden;"></polygon>
+            <text x="32" y="17" class="desctitle aboutDescWindow" style="visibility: hidden;">About Me</text>
+            <text x="32" y="19.5" class="desctext aboutDescWindow" style="visibility: hidden;">Hey there! I'm Julien Perce, a 17 year-old high school senior living in Chicago.</text>
+            <text x="32" y="20.5" class="desctext aboutDescWindow" style="visibility: hidden;">I'm half American, half Belgian, but was born and have lived my whole life in Chicago and its suburbs.</text>
+
             <polygon id="MEJ" class="descwindow MEJDescWindow" points="45, 35 44, 34 28, 34 28, 6 58, 6 58, 34 46, 34" style="visibility: hidden;"></polygon>
             <text x="31" y="8" class="desctitle MEJDescWindow" style="visibility: hidden;">MATh.en.JEANS</text>
             <image class="descwindow MEJDescWindow" href="./assets/youngJP.jpg" x="47" y="7" width="10" height="10" style="visibility: hidden;"></image>
