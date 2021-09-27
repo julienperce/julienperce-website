@@ -71,11 +71,8 @@
                 <circle class="projstop" cx="50" cy="20" r="0.5" /> <!--start of project line-->
                 <circle class="midnode" cx="50" cy="20" r="0.3" />
                 
-                
-                <circle class="projstop" cx="81" cy="14.45" r="0.5" /> 
-                <circle class="midnode" cx="81" cy="14.45" r="0.3" />
-                <circle class="projstop" cx="89" cy="14.45" r="0.5" /> 
-                <circle class="midnode" cx="89" cy="14.45" r="0.3" />
+                <circle class="projstop" cx="89" cy="14.45" r="0.5" onmouseover="showDesc('wipDescWindow');" onmouseout="hideDesc('wipDescWindow');"/> 
+                <circle class="midnode" cx="89" cy="14.45" r="0.3" onmouseover="showDesc('wipDescWindow');" onmouseout="hideDesc('wipDescWindow');"/>
 
                 <circle class="workstop" cx="65" cy="20" r="0.5" /> <!--start of work line-->
                 <circle class="midnode" cx="65" cy="20" r="0.3" />
@@ -161,6 +158,11 @@
                 <circle class="midnode" cx="73" cy="14.45" r="0.3" onmouseover="showDesc('cj8DescWindow');" onmouseout="hideDesc('cj8DescWindow');"/>
             </a>
 
+            <a href="https://hacktoberfest.digitalocean.com/" target="_blank">
+                <circle class="projstop" cx="81" cy="14.45" r="0.5" onmouseover="showDesc('hackDescWindow');" onmouseout="hideDesc('hackDescWindow');"/> 
+                <circle class="midnode" cx="81" cy="14.45" r="0.3" onmouseover="showDesc('hackDescWindow');" onmouseout="hideDesc('hackDescWindow');"/>
+            </a>
+
             <text x="24.25" y="19" class="stoptext">KEEN Chicago</text>
             <text x="15" y="21.5" class="stoptext">My Block, My Hood,</text>
             <text x="17.25" y="22.5" class="stoptext">My City</text>
@@ -180,7 +182,7 @@
             <text x="54.15" y="13.35" class="stoptext">./web/src</text>
             <text x="62.65" y="16" class="stoptext">SNAKE 3001</text>
             <text x="69.25" y="13.35" class="stoptext">Summer Code Jam</text>
-            <text x="77.5" y="16" class="stoptext">Hacktoberfest 2020</text>
+            <text x="78.2" y="16" class="stoptext">Hacktoberfest</text>
             <text x="86.75" y="13.35" class="stopnotbuilttext">In progress</text>
             <text x="92" y="14.8" class="lineendtext">&nbsp; ▶ Projects</text>
 
@@ -280,7 +282,33 @@
             <text x="59" y="42.45" class="desctext cj8DescWindow" style="visibility: hidden;">- 783 lines of code, 28363 characters, pure Python</text>
             <text x="43.25" y="43.25" class="imgdesc cj8DescWindow" style="visibility: hidden; font-style: italic;">^ The main menu I designed/coded</text>
 
+            <polygon id="cj8" class="descwindow hackDescWindow" points="81, 15.45 80, 16.45 63, 16.45 63, 37 93.5, 37 93.5, 16.45 82, 16.45" style="visibility: hidden;"></polygon>
+            <text x="73" y="18.45" class="desctitle hackDescWindow" style="visibility: hidden;">Hacktoberfest</text>
+            <text x="73.5" y="19.95" class="desctext hackDescWindow" style="visibility: hidden; font-style: italic;">  ~ 2020, 2021 editions ~ &nbsp;</text>
+            <text x="64" y="21.45" class="desctext hackDescWindow" style="visibility: hidden; font-weight: bold;">Click the stop to find out more about Hacktoberfest!</text>
+            <text x="64" y="22.95" class="desctext hackDescWindow" style="visibility: hidden;">- Presented by DigitalOcean and sponsored by software leaders</text>
+            <text x="65.5" y="23.95" class="desctext hackDescWindow" style="visibility: hidden;">like Intel, Hacktoberfest is a yearly competition that aims</text>
+            <text x="65.5" y="24.95" class="desctext hackDescWindow" style="visibility: hidden;">to promote collaboration to open-source software. Participants</text>
+            <text x="65.5" y="25.95" class="desctext hackDescWindow" style="visibility: hidden;">can contribute to any of the millions of projects registered</text>
+            <text x="65.5" y="26.95" class="desctext hackDescWindow" style="visibility: hidden;">as accepting contributions during the competition, ranging. </text>
+            <text x="65.5" y="27.95" class="desctext hackDescWindow" style="visibility: hidden;">from simple for-fun projects to key software for multi-million</text>
+            <text x="65.5" y="28.95" class="desctext hackDescWindow" style="visibility: hidden;">dollar entreprises.</text>
+            <text x="64" y="30.45" class="desctext hackDescWindow" style="visibility: hidden;">- I discovered this competition in 2020, and 'won' it (finishing among</text>
+            <text x="65.5" y="31.45" class="desctext hackDescWindow" style="visibility: hidden;">the first people to reach a certain number of validated contributions)</text>
+            <text x="65.5" y="32.45" class="desctext hackDescWindow" style="visibility: hidden;">that year. Some of the notable projects I contributed to included</text>
+            <text x="65.5" y="33.45" class="desctext hackDescWindow" style="visibility: hidden;">a "Hacktoberfest Calculator", a fully functional Python calculator.</text>
+            <text x="64" y="34.95" class="desctext hackDescWindow" style="visibility: hidden;">- I will be participating in this competition in 2021, so let me know</text>
+            <text x="65.5" y="35.95" class="desctext hackDescWindow" style="visibility: hidden;">if you know of any cool projects to contribute to!</text>
 
+            <polygon id="cj8" class="descwindow wipDescWindow" points="89, 15.45 88, 16.45 71, 16.45 71, 28 93.5, 28 93.5, 16.45 90, 16.45" style="visibility: hidden;"></polygon>
+            <text x="76.5" y="18.45" class="desctitle wipDescWindow" style="visibility: hidden;">Work in Process</text>
+            <text x="72" y="20.45" class="desctext wipDescWindow" style="visibility: hidden; font-weight: bold";>Projects I am currently working on:</text>
+            <text x="72" y="21.95" class="desctext wipDescWindow" style="visibility: hidden;">- A Discord usic bot using discord.py</text>
+            <text x="72" y="23.45" class="desctext wipDescWindow" style="visibility: hidden;">- A program to graph standard deviation bell curves</text>
+            <text x="72" y="24.95" class="desctext wipDescWindow" style="visibility: hidden;">- A webscraper to transfer data from my school's</text>
+            <text x="73.5" y="25.95" class="desctext wipDescWindow" style="visibility: hidden;">course managment platform to my personal</text>
+            <text x="73.5" y="26.95" class="desctext wipDescWindow" style="visibility: hidden;">calendars</text>
+            
             <polygon id="sumIntern" class="descwindow intDescWindow" points="71, 20 70, 21 70, 32 37, 32 37, 7 70, 7 70, 19" style="visibility: hidden;"></polygon> 
             <text x="44" y="9" class="desctitle intDescWindow" style="visibility: hidden;">Summer Internship at LFC</text>
             <text x="49.5" y="10.5" class="desctext intDescWindow" style="visibility: hidden; font-style: italic;">  ~ June - July 2021 ~ &nbsp;</text>
