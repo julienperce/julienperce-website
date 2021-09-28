@@ -92,8 +92,8 @@
                 <circle class="midnode" cx="35" cy="30" r="0.3" />
                 <circle class="aboutstop" cx="27" cy="30" r="0.5" onmouseover="showDesc('aboutDescWindow'); writeAge();" onmouseout="hideDesc('aboutDescWindow'); writeAge();"/> 
                 <circle class="midnode" cx="27" cy="30" r="0.3" onmouseover="showDesc('aboutDescWindow'); writeAge();" onmouseout="hideDesc('aboutDescWindow'); writeAge();"/>
-                <circle class="aboutstop" cx="19" cy="30" r="0.5" /> 
-                <circle class="midnode" cx="19" cy="30" r="0.3" />
+                <circle class="aboutstop" cx="19" cy="30" r="0.5" onmouseover="showDesc('favsDescWindow');" onmouseout="hideDesc('favsDescWindow');"/> 
+                <circle class="midnode" cx="19" cy="30" r="0.3" onmouseover="showDesc('favsDescWindow');" onmouseout="hideDesc('favsDescWindow');"/>
 
                 <circle class="intrastop" cx="45" cy="30" r="0.5" /> <!--start of intracurriculars line-->
                 <circle class="midnode" cx="45" cy="30" r="0.3" />
@@ -378,6 +378,10 @@
             <text x="30" y="30.5" class="desctext aboutDescWindow" style="visibility: hidden;">- Languages: French, English (native), Spanish (proficient), Chinese (learning)</text>
             <text x="30" y="32" id="ageyears" class="desctext aboutDescWindow" style="visibility: hidden;">- 17 years old</text>
             <text x="30" y="33.5" id="ageyears" class="desctext aboutDescWindow" style="visibility: hidden;">- Willing to die defending pineapple as the best pizza topping</text>
+
+            <polygon id="favs" class="descwindow favsDescWindow" points="20, 30 21, 29 21, 15 61, 15 61, 34.5 21, 34.5 21, 31" style="visibility: hidden;"></polygon>
+
+
 
             <polygon id="MEJ" class="descwindow MEJDescWindow" points="45, 35 44, 34 28, 34 28, 6 58, 6 58, 34 46, 34" style="visibility: hidden;"></polygon>
             <text x="31" y="8" class="desctitle MEJDescWindow" style="visibility: hidden;">MATh.en.JEANS</text>
