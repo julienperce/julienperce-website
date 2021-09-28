@@ -90,8 +90,8 @@
 
                 <circle class="aboutstop" cx="35" cy="30" r="0.5" /> <!--start of about line-->
                 <circle class="midnode" cx="35" cy="30" r="0.3" />
-                <circle class="aboutstop" cx="27" cy="30" r="0.5" onmouseover="showDesc('aboutDescWindow');" onmouseout="hideDesc('aboutDescWindow');"/> 
-                <circle class="midnode" cx="27" cy="30" r="0.3" onmouseover="showDesc('aboutDescWindow');" onmouseout="hideDesc('aboutDescWindow');"/>
+                <circle class="aboutstop" cx="27" cy="30" r="0.5" onmouseover="showDesc('aboutDescWindow'); writeAge();" onmouseout="hideDesc('aboutDescWindow'); writeAge();"/> 
+                <circle class="midnode" cx="27" cy="30" r="0.3" onmouseover="showDesc('aboutDescWindow'); writeAge();" onmouseout="hideDesc('aboutDescWindow'); writeAge();"/>
                 <circle class="aboutstop" cx="19" cy="30" r="0.5" /> 
                 <circle class="midnode" cx="19" cy="30" r="0.3" />
 
@@ -363,10 +363,21 @@
             <text x="82.5" y="24" class="desctext collegeWindow" style="visibility: hidden; font-style: italic;"> &nbsp; ~ to be determined...</text>
             <text x="84" y="25" class="desctext collegeWindow" style="visibility: hidden; font-style: italic;"> &nbsp; check back summer '22! ~ &nbsp;</text>
           
-            <polygon id="about" class="descwindow aboutDescWindow" points="28, 30 29, 29 29, 15 70, 15 70, 45 29, 45 29, 31" style="visibility: hidden;"></polygon>
-            <text x="32" y="17" class="desctitle aboutDescWindow" style="visibility: hidden;">About Me</text>
-            <text x="32" y="19.5" class="desctext aboutDescWindow" style="visibility: hidden;">Hey there! I'm Julien Perce, a 17 year-old high school senior living in Chicago.</text>
-            <text x="32" y="20.5" class="desctext aboutDescWindow" style="visibility: hidden;">I'm half American, half Belgian, but was born and have lived my whole life in Chicago and its suburbs.</text>
+            <polygon id="about" class="descwindow aboutDescWindow" points="28, 30 29, 29 29, 15 69, 15 69, 34.5 29, 34.5 29, 31" style="visibility: hidden;"></polygon>
+            <text x="45.25" y="17" class="desctitle aboutDescWindow" style="visibility: hidden;">About Me</text>
+            <text x="30" y="18.5" class="desctext aboutDescWindow" style="visibility: hidden;">Hey there! I'm Julien Perce, a 17 year-old high school senior living in Chicago. I'm half </text>
+            <text x="30" y="19.5" class="desctext aboutDescWindow" style="visibility: hidden;">American, half Belgian, but was born and have lived my whole life in Chicago and its suburbs.</text>
+            <text x="30" y="20.5" class="desctext aboutDescWindow" style="visibility: hidden;">I obviously spend a lot of time working, but when I'm not, you can catch me spending time with</text>
+            <text x="30" y="21.5" class="desctext aboutDescWindow" style="visibility: hidden;">my friends, chilling with my cat and dog, or listening to Christmas music totally out of season.</text>
+            <text x="30" y="22.5" class="desctext aboutDescWindow" style="visibility: hidden;">I made this website not only as a challenge to make myself enjoy web development, but also as </text>
+            <text x="30" y="23.5" class="desctext aboutDescWindow" style="visibility: hidden;">a way for you, whomever you may be, to find out more about me.</text>
+            <text x="30" y="25" class="imgdesc aboutDescWindow" style="visibility: hidden; font-style: italic;"> ~ yes, the design for it is inspired by the chicago l maps ~ </text>
+            <text x="30" y="26.5" class="desctext aboutDescWindow" style="visibility: hidden; font-weight: bold;">Quick Facts:</text>
+            <text x="30" y="28" class="desctext aboutDescWindow" style="visibility: hidden;">- Passionate about all things computers, including building, making games and software</text>
+            <text x="31.5" y="29" class="desctext aboutDescWindow" style="visibility: hidden;">for them, and troubleshooting them</text>
+            <text x="30" y="30.5" class="desctext aboutDescWindow" style="visibility: hidden;">- Languages: French, English (native), Spanish (proficient), Chinese (learning)</text>
+            <text x="30" y="32" id="ageyears" class="desctext aboutDescWindow" style="visibility: hidden;">- 17 years old</text>
+            <text x="30" y="33.5" id="ageyears" class="desctext aboutDescWindow" style="visibility: hidden;">- Willing to die defending pineapple as the best pizza topping</text>
 
             <polygon id="MEJ" class="descwindow MEJDescWindow" points="45, 35 44, 34 28, 34 28, 6 58, 6 58, 34 46, 34" style="visibility: hidden;"></polygon>
             <text x="31" y="8" class="desctitle MEJDescWindow" style="visibility: hidden;">MATh.en.JEANS</text>
