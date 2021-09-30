@@ -51,8 +51,6 @@
             <a>
                 <circle class="volstop" cx="35" cy="20" r="0.5" /> <!--start of volunteer line-->
                 <circle class="midnode" cx="35" cy="20" r="0.3" />
-                <circle class="volstop" cx="27" cy="20" r="0.5" onmouseover="showDesc('keenDescWindow');" onmouseout="hideDesc('keenDescWindow');"/> 
-                <circle class="midnode" cx="27" cy="20" r="0.3" onmouseover="showDesc('keenDescWindow');" onmouseout="hideDesc('keenDescWindow');"/>
                 <circle class="volstop" cx="19" cy="20" r="0.5" /> 
                 <circle class="midnode" cx="19" cy="20" r="0.3" />
                 <circle class="volstop" cx="19" cy="14.45" r="0.5" /> 
@@ -119,6 +117,12 @@
             </a>
             
             <!--a's for clickable hyperlinks-->
+            <!--clickable volunteer websites-->
+            <a href="https://www.keenchicago.org/" target="_blank">
+                <circle class="volstop" cx="27" cy="20" r="0.5" onmouseover="showDesc('keenDescWindow');" onmouseout="hideDesc('keenDescWindow');"/> 
+                <circle class="midnode" cx="27" cy="20" r="0.3" onmouseover="showDesc('keenDescWindow');" onmouseout="hideDesc('keenDescWindow');"/>
+            </a>
+
             <!--clickable socials/contacts-->
             <a href="https://github.com/julienperce/" target="_blank">
                 <circle class="contactstop" cx="38" cy="3.45" r="0.5" onmouseover="showDesc('gthbDescWindow');" onmouseout="hideDesc('gthbDescWindow');"/> <!--socials-->
@@ -209,6 +213,8 @@
 
             <polygon id="keenChi" class="descwindow keenDescWindow" points="28, 20 29, 19 29, 9 49, 9 49, 29 29, 29 29, 21" style="visibility: hidden;"></polygon>
             <text x="31" y="15" class="desctitle keenDescWindow" style="visibility: hidden;">KEEN Chicago</text>
+            <text x="31" y="16.5" class="desctext keenDescWindow" style="visibility: hidden; font-weight: bold;">Click the stop to visit Keen Chicago's website!</text>
+            
             <!--todo finish keen desc window-->
 
             <polygon id="gthb" class="descwindow gthbDescWindow" points="38, 4.45 39, 5.45 48, 5.45 48, 7.95 28, 7.95 28, 5.45 37, 5.45" style="visibility: hidden;"></polygon> 
