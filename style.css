@@ -84,6 +84,10 @@ svg|a:hover {
     fill: rgba(180, 184, 191);
 }
 
+.inthobdiagline {
+    stroke: rgba(180, 184, 191);
+    stroke-width: "1";
+}
 
 .volstop{
     fill: rgba(247, 45, 200);
