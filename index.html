@@ -51,10 +51,6 @@
             <a>
                 <circle class="volstop" cx="35" cy="20" r="0.5" /> <!--start of volunteer line-->
                 <circle class="midnode" cx="35" cy="20" r="0.3" />
-                <circle class="volstop" cx="19" cy="20" r="0.5" /> 
-                <circle class="midnode" cx="19" cy="20" r="0.3" />
-                <circle class="volstop" cx="19" cy="14.45" r="0.5" /> 
-                <circle class="midnode" cx="19" cy="14.45" r="0.3" />
                 <circle class="volstop" cx="19" cy="8.8" r="0.5" /> 
                 <circle class="midnode" cx="19" cy="8.8" r="0.3" />
                 <circle class="volstop" cx="11" cy="8.8" r="0.5" /> 
@@ -128,6 +124,11 @@
                 <circle class="midnode" cx="19" cy="20" r="0.3" onmouseover="showDesc('m3DescWindow');" onmouseout="hideDesc('m3DescWindow');"/>
             </a>
 
+            <a href="https://www.facebook.com/feedtheculturebrussels/" target="_blank">
+                <circle class="volstop" cx="19" cy="14.45" r="0.5" onmouseover="showDesc('foodDescWindow');" onmouseout="hideDesc('foodDescWindow');"/> 
+                <circle class="midnode" cx="19" cy="14.45" r="0.3" onmouseover="showDesc('foodDescWindow');" onmouseout="hideDesc('foodDescWindow');"/>
+            </a>
+
             <!--clickable socials/contacts-->
             <a href="https://github.com/julienperce/" target="_blank">
                 <circle class="contactstop" cx="38" cy="3.45" r="0.5" onmouseover="showDesc('gthbDescWindow');" onmouseout="hideDesc('gthbDescWindow');"/> <!--socials-->
@@ -149,6 +150,7 @@
                 <circle class="contactstop" cx="59.5" cy="6.35" r="0.5" onmouseover="showDesc('persEmlDescWindow');" onmouseout="hideDesc('persEmlDescWindow');"/> 
                 <circle class="midnode" cx="59.5" cy="6.35" r="0.3" onmouseover="showDesc('persEmlDescWindow');" onmouseout="hideDesc('persEmlDescWindow');"/>
             </a>
+
             <!--clickable projects-->
             <a href="https://github.com/julienperce/julienperce.github.io" target="_blank">
                 <circle class="projstop" cx="55.65" cy="14.45" r="0.5" onmouseover="showDesc('webSrcDescWindow');" onmouseout="hideDesc('webSrcDescWindow');"/> 
@@ -239,7 +241,28 @@
             <text x="23.5" y="25.5" class="desctext m3DescWindow" style="visibility: hidden;">grocery delivieries.</text>
             <text x="22" y="27" class="desctext m3DescWindow" style="visibility: hidden;">- I felt very proud when, earlier this year, M3 was featured</text>
             <text x="23.5" y="28" class="desctext m3DescWindow" style="visibility: hidden;">on Google's global homepage, honoring the efforts of</text>
-            <text x="23.5" y="29" class="desctext m3DescWindow" style="visibility: hidden;">myself and thousands of other Chicago teen volunteers.</text>
+            <text x="23.5" y="29" class="desctext m3DescWindow" style="visibility: hidden;">myself and hundreds of other Chicago teen volunteers.</text>
+
+            <polygon id="food" class="descwindow foodDescWindow" points="20, 14.45 21, 13.35 21, 7.55 50.5, 7.55 50.5, 30.55 21, 30.55 21, 15.45" style="visibility: hidden;"></polygon>
+            <text x="26.25" y="9.55" class="desctitle foodDescWindow" style="visibility: hidden;">Feed The Culture Brussels</text>
+            <text x="22" y="11.05" class="desctext foodDescWindow" style="visibility: hidden; font-weight: bold;">Click the stop to visit Feed The Culture Brussels' Facebook page!</text>
+            <text x="22" y="12.55" class="desctext foodDescWindow" style="visibility: hidden;">- During my past summer break, while on vacation in Belgium, I</text>
+            <text x="23.5" y="13.55" class="desctext foodDescWindow" style="visibility: hidden;">volunteered at a Food Bank led by my sister, a grad student </text>
+            <text x="23.5" y="14.55" class="desctext foodDescWindow" style="visibility: hidden;">living there. The project, named Feed The Culture, runs</text>
+            <text x="23.5" y="15.55" class="desctext foodDescWindow" style="visibility: hidden;">weekly distributions of unsold groceries to members of the</text>
+            <text x="23.5" y="16.55" class="desctext foodDescWindow" style="visibility: hidden;">Brussels arts & culture scene.</text>
+            <text x="22" y="18.05" class="desctext foodDescWindow" style="visibility: hidden;">- So at 7am on a Saturday morning, we drove to the largest early</text>
+            <text x="23.5" y="19.05" class="desctext foodDescWindow" style="visibility: hidden;">morning market in all of Brussels to pick up thousands of unsold</text>
+            <text x="23.5" y="20.05" class="desctext foodDescWindow" style="visibility: hidden;">produce. We then did the (literal) dirty work of sorting through</text>
+            <text x="23.5" y="21.05" class="desctext foodDescWindow" style="visibility: hidden;">and determining what was still foodsafe according to strict local</text>
+            <text x="23.5" y="22.05" class="desctext foodDescWindow" style="visibility: hidden;">food safety guidelines. After sorting the hundreds of other</text>
+            <text x="23.5" y="23.05" class="desctext foodDescWindow" style="visibility: hidden;">products delivered to us, we finally got to distribution, handing</text>
+            <text x="23.5" y="24.05" class="desctext foodDescWindow" style="visibility: hidden;">out thousands of Euros worth of groceries while minimizing</text>
+            <text x="23.5" y="25.05" class="desctext foodDescWindow" style="visibility: hidden;">food waste.</text>
+            <text x="22" y="26.55" class="desctext foodDescWindow" style="visibility: hidden;">- While the experience may have shown me some scarring images of</text>
+            <text x="23.5" y="27.55" class="desctext foodDescWindow" style="visibility: hidden;">the food I eat, it defenitely enlightened me about the food waste</text>
+            <text x="23.5" y="28.55" class="desctext foodDescWindow" style="visibility: hidden;">epidemic, and I was still able to have a great and memorable time</text>
+            <text x="23.5" y="29.55" class="desctext foodDescWindow" style="visibility: hidden;">with the volunteers and distribution attendees.</text>
 
             <polygon id="gthb" class="descwindow gthbDescWindow" points="38, 4.45 39, 5.45 48, 5.45 48, 7.95 28, 7.95 28, 5.45 37, 5.45" style="visibility: hidden;"></polygon> 
             <text x="29" y="6.95" class="desctext gthbDescWindow" style="visibility: hidden; font-style: italic;" >Click the stop to be redirected to my GitHub!</text>
