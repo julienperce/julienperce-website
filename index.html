@@ -111,10 +111,10 @@
                 <circle class="midnode" cx="74" cy="40" r="0.3" onmouseover="showDesc('astroDescWindow');" onmouseout="hideDesc('astroDescWindow');"/>
                 <circle class="inthobstop" cx="77" cy="43" r="0.5" onmouseover="showDesc('aiDescWindow');" onmouseout="hideDesc('aiDescWindow');"/> 
                 <circle class="midnode" cx="77" cy="43" r="0.3" onmouseover="showDesc('aiDescWindow');" onmouseout="hideDesc('aiDescWindow');"/>
-                <circle class="inthobstop" cx="80" cy="46" r="0.5" /> 
-                <circle class="midnode" cx="80" cy="46" r="0.3" />
-                <circle class="inthobstop" cx="86" cy="46" r="0.5" /> 
-                <circle class="midnode" cx="86" cy="46" r="0.3" /> 
+                <circle class="inthobstop" cx="80" cy="46" r="0.5" onmouseover="showDesc('cogsciDescWindow');" onmouseout="hideDesc('cogsciDescWindow');"/> 
+                <circle class="midnode" cx="80" cy="46" r="0.3" onmouseover="showDesc('cogsciDescWindow');" onmouseout="hideDesc('cogsciDescWindow');"/>
+                <circle class="inthobstop" cx="86" cy="46" r="0.5" onmouseover="showDesc('qmDescWindow');" onmouseout="hideDesc('qmDescWindow');"/> 
+                <circle class="midnode" cx="86" cy="46" r="0.3" onmouseover="showDesc('qmDescWindow');" onmouseout="hideDesc('qmDescWindow');"/> 
                 <circle class="inthobstop" cx="48" cy="44.5" r="0.5" /> <!--start of hobbies branch-->
                 <circle class="midnode" cx="48" cy="44.5" r="0.3" />
                 <circle class="inthobstop" cx="42" cy="44.5" r="0.5" /> 
@@ -587,7 +587,7 @@
             <text x="19" y="16.5" class="desctext CHNDescWindow" style="visibility: hidden; font-style: italic;">  ~ 对不起,我的中文不好 ~ &nbsp;</text>
             <text x="18" y="18" class="desctext CHNDescWindow" style="visibility: hidden;">- Studied Chinese for fun after school in primary school</text>
             <text x="18" y="19.5" class="desctext CHNDescWindow" style="visibility: hidden;">- Offically took Mandarin as an elective starting in</text>
-            <text x="19.5" y="20.5" class="desctext CHNDescWindow" style="visibility: hidden;">9th grade</text>
+            <text x="19.5" y="20.5" class="desctext CHNDescWindow" style="visibility: hidden;">9th grade - currently HSK Level II Certified</text>
             <text x="18" y="22" class="desctext CHNDescWindow" style="visibility: hidden;">- In 9th grade, I also participated in an exchange with a</text>
             <text x="19.5" y="23" class="desctext CHNDescWindow" style="visibility: hidden;">Chinese High School in Daishan, a small island not far</text>
             <text x="19.5" y="24" class="desctext CHNDescWindow" style="visibility: hidden;">from Shanghai. I was extremely fortunate to be able to</text>
@@ -639,7 +639,7 @@
             <text x="57.5" y="36" class="desctext astroDescWindow" style="visibility: hidden;">- For those wondering, my favorite planet is TrES-2b,</text>
             <text x="58.5" y="37" class="desctext astroDescWindow" style="visibility: hidden;">and I do not have a favorite constellation (yet).</text>
 
-            <polygon id="ai" class="descwindow aiDescWindow" points="77,42 76, 41 67, 41 67, 29 85, 29 85, 41 78, 41" style="visibility: hidden;"></polygon>
+            <polygon id="ai" class="descwindow aiDescWindow" points="77, 42 76, 41 67, 41 67, 29 85, 29 85, 41 78, 41" style="visibility: hidden;"></polygon>
             <text x="68" y="31" class="desctitle aiDescWindow" style="visibility: hidden;">Artificial Intelligence,</text>
             <text x="69.5" y="32.5" class="desctitle aiDescWindow" style="visibility: hidden;">Machine Learning</text>
             <text x="68" y="34" class="desctext aiDescWindow" style="visibility: hidden;">- I have not really had any true exposure</text>
@@ -649,6 +649,18 @@
             <text x="69.5" y="38" class="desctext aiDescWindow" style="visibility: hidden;">time after time how their (safe)</text>
             <text x="69.5" y="39" class="desctext aiDescWindow" style="visibility: hidden;">development can be incredibly</text>
             <text x="69.5" y="40" class="desctext aiDescWindow" style="visibility: hidden;">beneficial for today's world.</text>
+
+            <polygon id="cogsci" class="descwindow cogsciDescWindow" points="80, 45 79, 44 69, 44 69, 33.5 85, 33.5 85, 44 81, 44" style="visibility: hidden;"></polygon>
+            <text x="70" y="35.5" class="desctitle cogsciDescWindow" style="visibility: hidden;">Cognitive Science</text>
+            <text x="70" y="37" class="desctext cogsciDescWindow" style="visibility: hidden;">- To follow up the studies I've done</text>
+            <text x="71.5" y="38" class="desctext cogsciDescWindow" style="visibility: hidden;">on conscience from a philosopy</text>
+            <text x="71.5" y="39" class="desctext cogsciDescWindow" style="visibility: hidden;">standpoint, I'd like to study</text>
+            <text x="71.5" y="40" class="desctext cogsciDescWindow" style="visibility: hidden;">cognitive science to explore</text>
+            <text x="71.5" y="41" class="desctext cogsciDescWindow" style="visibility: hidden;">how we can reproduce human</text>
+            <text x="71.5" y="42" class="desctext cogsciDescWindow" style="visibility: hidden;">conscience in computers and</text>
+            <text x="71.5" y="43" class="desctext cogsciDescWindow" style="visibility: hidden;">apply it to real-world uses.</text>
+
+            <polygon id="qm" class="descwindow qmDescWindow" points="86, 45 85, 44 75, 44 75, 33.5 91, 33.5 91, 44 87, 44" style="visibility: hidden;"></polygon>
 
 
         </svg>
