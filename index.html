@@ -48,8 +48,12 @@
             <line class="inthobdiagline" x1="74" x2="80" y1="40" y2="46"></line>
             <rect class="inthobline" x="80" y="45.5" width="6" height="1" />
             <line class="inthobdiagline" x1="48" x2="56" y1="44.5" y2="40"></line>
-            <rect class="inthobline" x="18" y="44" width="30" height="1" />
+            <rect class="inthobline" x="12" y="44" width="36" height="1" />
             <rect class="inthobdesc" x="88.5" y="45.35" width="5.5" height="1.25" />
+            <rect class="inthobdesc" x="3" y="43.75" width="5.5" height="1.25" />
+
+            <!--connecting loop-->
+
 
             
             <a>
@@ -115,8 +119,8 @@
                 <circle class="midnode" cx="80" cy="46" r="0.3" onmouseover="showDesc('cogsciDescWindow');" onmouseout="hideDesc('cogsciDescWindow');"/>
                 <circle class="inthobstop" cx="86" cy="46" r="0.5" onmouseover="showDesc('qmDescWindow');" onmouseout="hideDesc('qmDescWindow');"/> 
                 <circle class="midnode" cx="86" cy="46" r="0.3" onmouseover="showDesc('qmDescWindow');" onmouseout="hideDesc('qmDescWindow');"/> 
-                <circle class="inthobstop" cx="48" cy="44.5" r="0.5" /> <!--start of hobbies branch-->
-                <circle class="midnode" cx="48" cy="44.5" r="0.3" />
+                <circle class="inthobstop" cx="48" cy="44.5" r="0.5" onmouseover="showDesc('socDescWindow');" onmouseout="hideDesc('socDescWindow');"/> <!--start of hobbies branch-->
+                <circle class="midnode" cx="48" cy="44.5" r="0.3" onmouseover="showDesc('socDescWindow');" onmouseout="hideDesc('socDescWindow');"/>
                 <circle class="inthobstop" cx="42" cy="44.5" r="0.5" /> 
                 <circle class="midnode" cx="42" cy="44.5" r="0.3" />
                 <circle class="inthobstop" cx="36" cy="44.5" r="0.5" /> 
@@ -127,6 +131,8 @@
                 <circle class="midnode" cx="24" cy="44.5" r="0.3" />
                 <circle class="inthobstop" cx="18" cy="44.5" r="0.5" /> 
                 <circle class="midnode" cx="18" cy="44.5" r="0.3" />
+                <circle class="inthobstop" cx="12" cy="44.5" r="0.5" /> 
+                <circle class="midnode" cx="12" cy="44.5" r="0.3" />
 
             </a>
             
@@ -247,6 +253,8 @@
             <text x="27.25" y="43.5" class="stoptext">PC Building</text>
             <text x="22.75" y="46" class="stoptext">Drums</text>
             <text x="16.5" y="43.5" class="stoptext">Fishing</text>
+            <text x="8.75" y="46" class="stoptext">Rock Climbing</text>
+            <text x="3" y="44.75" class="lineendtext">&nbsp; Hobbies ◀ &nbsp</text>
 
             <polygon id="keenChi" class="descwindow keenDescWindow" points="28, 20 29, 19 29, 13 55.5, 13 55.5, 25.5 29, 25.5 29, 21" style="visibility: hidden;"></polygon>
             <text x="37" y="15" class="desctitle keenDescWindow" style="visibility: hidden;">KEEN Chicago</text>
@@ -669,6 +677,21 @@
             <text x="73" y="41" class="desctext qmDescWindow" style="visibility: hidden;">later in my studies, I'd like to study</text>
             <text x="73" y="42" class="desctext qmDescWindow" style="visibility: hidden;">quantum mechanics,to hopefully participate</text>
             <text x="73" y="43" class="desctext qmDescWindow" style="visibility: hidden;">in the quantum computing revolution.</text>
+
+            <polygon id="soc" class="descwindow socDescWindow" points="48, 43.5 47, 42.5 37.5, 42.5 37.5, 27.5 60, 27.5 60, 42.5 49, 42.5" style="visibility: hidden;"></polygon>
+            <text x="46.25" y="29.5" class="desctitle socDescWindow" style="visibility: hidden;">Soccer</text>
+            <text x="38.5" y="31" class="desctext socDescWindow" style="visibility: hidden;">- I have played soccer nearly my whole life and,</text>
+            <text x="40" y="32" class="desctext socDescWindow" style="visibility: hidden;">despite never being that great at it, have never</text>
+            <text x="40" y="33" class="desctext socDescWindow" style="visibility: hidden;">lost my enjoyment for the sport.</text>
+            <text x="38.5" y="34.5" class="desctext socDescWindow" style="visibility: hidden;">- I've been on my school's team since sixth grade,</text>
+            <text x="40" y="35.5" class="desctext socDescWindow" style="visibility: hidden;">and like playing most positions but particularly</text>
+            <text x="40" y="36.5" class="desctext socDescWindow" style="visibility: hidden;">enjoy goalkeeper, striker, and fullback.</text>
+            <text x="38.5" y="38" class="desctext socDescWindow" style="visibility: hidden;">- Die hard Club Brugge & Belgian National Team</text>
+            <text x="40" y="39" class="desctext socDescWindow" style="visibility: hidden;">fan</text>
+            <text x="38.5" y="40.5" class="desctext socDescWindow" style="visibility: hidden;">- My favorite players are Thibaut Courtois and</text>
+            <text x="40" y="41.5" class="desctext socDescWindow" style="visibility: hidden;">Eden Hazard (when he's not injured)</text>
+
+
 
         </svg>
             
