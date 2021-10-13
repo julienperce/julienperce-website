@@ -1,7 +1,5 @@
 @namespace svg url(http://www.w3.org/2000/svg);
 
-
-
 svg|a:hover {
     cursor: pointer;
 }
@@ -81,11 +79,11 @@ svg|a:hover {
 }
 
 .inthobline {
-    fill: rgba(180, 184, 191);
+    fill: #333333;
 }
 
 .inthobdiagline {
-    stroke: rgba(180, 184, 191);
+    stroke: #333333;
     stroke-width: "1";
 }
 
@@ -118,5 +116,5 @@ svg|a:hover {
 }
 
 .inthobstop {
-    fill: rgba(180, 184, 191);
+    fill: #333333;
 }
