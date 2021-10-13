@@ -125,8 +125,8 @@
                 <circle class="midnode" cx="42" cy="44.5" r="0.3" onmouseover="showDesc('cbngDescWindow');" onmouseout="hideDesc('cbngDescWindow');"/>
                 <circle class="inthobstop" cx="36" cy="44.5" r="0.5" onmouseover="showDesc('chessDescWindow');" onmouseout="hideDesc('chessDescWindow');"/> 
                 <circle class="midnode" cx="36" cy="44.5" r="0.3" onmouseover="showDesc('chessDescWindow');" onmouseout="hideDesc('chessDescWindow');"/>
-                <circle class="inthobstop" cx="30" cy="44.5" r="0.5" /> 
-                <circle class="midnode" cx="30" cy="44.5" r="0.3" />
+                <circle class="inthobstop" cx="30" cy="44.5" r="0.5" onmouseover="showDesc('pcbDescWindow');" onmouseout="hideDesc('pcbDescWindow');"/> 
+                <circle class="midnode" cx="30" cy="44.5" r="0.3" onmouseover="showDesc('pcbDescWindow');" onmouseout="hideDesc('pcbDescWindow');"/>
                 <circle class="inthobstop" cx="24" cy="44.5" r="0.5" onmouseover="showDesc('drmsDescWindow');" onmouseout="hideDesc('drmsDescWindow');"/> 
                 <circle class="midnode" cx="24" cy="44.5" r="0.3" onmouseover="showDesc('drmsDescWindow');" onmouseout="hideDesc('drmsDescWindow');"/>
                 <circle class="inthobstop" cx="18" cy="44.5" r="0.5" onmouseover="showDesc('fshgDescWindow');" onmouseout="hideDesc('fshgDescWindow');"/> 
@@ -714,7 +714,20 @@
             <text x="31.5" y="40" class="desctext chessDescWindow" style="visibility: hidden;">Defense.</text>
             <text x="30" y="41.5" class="desctext chessDescWindow" style="visibility: hidden;">- #1 Sicilian Defense hater.</text>
 
-            <!-- add a pc building window with specs and photos here -->
+            <polygon id="pcb" class="descwindow pcbDescWindow" points="30, 43.5 29, 42.5 27, 42.5 27, 28 52, 28 52, 42.5 31, 42.5" style="visibility: hidden;"></polygon>
+            <text x="29" y="30" class="desctitle pcbDescWindow" style="visibility: hidden;">PC Building</text>
+            <text x="28" y="31.5" class="desctext pcbDescWindow" style="visibility: hidden;">- During the pandemic, I built my own pc. It was a very</text>
+            <text x="29.5" y="32.5" class="desctext pcbDescWindow" style="visibility: hidden;">fun experience, and was defenitely made easier by the </text>
+            <text x="29.5" y="33.5" class="desctext pcbDescWindow" style="visibility: hidden;">thousands hours of building Legos I put in as a child.</text>
+            <text x="28" y="35" class="desctext pcbDescWindow" style="visibility: hidden;">- Specs:</text>
+            <text x="29.5" y="36" class="desctext pcbDescWindow" style="visibility: hidden;">- Water-cooled Intel Core i5-9600k; 6 cores @ 4.3ghz</text>
+            <text x="29.5" y="37" class="desctext pcbDescWindow" style="visibility: hidden;">- GTX 1660 Super OC</text>
+            <text x="29.5" y="38" class="desctext pcbDescWindow" style="visibility: hidden;">- 16gb DDR4 @ 4000MHz</text>
+            <text x="28" y="39.5" class="desctext pcbDescWindow" style="visibility: hidden;">- I have also helped several of my friends build their own</text>
+            <text x="29.5" y="40.5" class="desctext pcbDescWindow" style="visibility: hidden;">computers, and it truly is an experience that never</text>
+            <text x="29.5" y="41.5" class="desctext pcbDescWindow" style="visibility: hidden;">gets old.</text>
+
+
 
             <polygon id="drms" class="descwindow drmsDescWindow" points="24, 43.5 23, 42.5 22, 42.5 22, 27.5 43.25, 27.5 43.25, 42.5 25, 42.5" style="visibility: hidden;"></polygon>
             <text x="26" y="29.5" class="desctitle drmsDescWindow" style="visibility: hidden;">Playing the Drums</text>
