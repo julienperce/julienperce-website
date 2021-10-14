@@ -4,6 +4,11 @@ svg|a:hover {
     cursor: pointer;
 }
 
+.maintext {
+    font-size: 1.85px;
+    font-style: italic;
+}
+
 .descwindow {
     fill: rgba(202, 204, 203);
     stroke:black;
@@ -64,6 +69,11 @@ svg|a:hover {
 
 .workline {
     fill: rgba(0, 5, 150);
+}
+
+.workdiagline {
+    stroke: rgba(0, 5, 150);
+    stroke-width: 0.125;
 }
 
 .eduline {
