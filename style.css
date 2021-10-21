@@ -1,5 +1,9 @@
 @namespace svg url(http://www.w3.org/2000/svg);
 
+body {
+    overflow: hidden;
+}
+
 svg|a:hover {
     cursor: pointer;
 }
