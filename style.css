@@ -20,6 +20,11 @@ svg|a:hover {
     font-style: italic;
 }
 
+#imgSrc{
+    font-size: 0.75px;
+    font-style: italic;
+}
+
 .descwindow {
     fill: rgba(202, 204, 203);
     stroke:black;
