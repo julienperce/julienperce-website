@@ -13,8 +13,11 @@
         <link rel="stylesheet" href="./style.css">
         <script src="script.js"></script>
     </head>
-    <body>
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <body onload="landing()">
+        <video autoplay muted id="mainVideo">
+            <source src="./assets/landinggif.mp4">
+        </video>
+        <svg id="mainSvg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="display: none;">
 
             <image href="./assets/chicagopix.png" x="0" y="-27" width="100" height="100" opacity="0.25"></image>
 
@@ -406,7 +409,7 @@
             <text x="58.95" y="23.45" class="desctext webSrcDescWindow" style="visibility: hidden; font-style: italic;">(#onepagelove)</text>
             <text x="48.15" y="24.45" class="desctext webSrcDescWindow" style="visibility: hidden;">- The whole site is contained in one large svg</text>
             <text x="48.15" y="25.45" class="desctext webSrcDescWindow" style="visibility: hidden;">- Written entirely in native HTML, CSS & JS</text>
-            <text x="48.15" y="26.45" class="desctext webSrcDescWindow" style="visibility: hidden;">- ___ lines of code, ____ characters</text>
+            <text x="48.15" y="26.45" class="desctext webSrcDescWindow" style="visibility: hidden;">- 900+ lines of code, 100k+ characters</text>
             <text x="48.15" y="27.45" class="desctext webSrcDescWindow" style="visibility: hidden;">- Hosted on GitHub Pages</text>
             
             <polygon id="snk31" class="descwindow snk31DescWindow" points="65, 15.45 64, 16.45 36.5, 16.45 36.5, 35.95 77.5, 35.95 77.5, 16.45 66, 16.45" style="visibility: hidden;"></polygon>
