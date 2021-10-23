@@ -20,6 +20,10 @@ svg|a:hover {
     font-style: italic;
 }
 
+#resume {
+    text-decoration: underline;
+}
+
 #imgSrc{
     font-size: 0.75px;
     font-style: italic;
