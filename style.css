@@ -15,6 +15,10 @@ svg|a:hover {
     cursor: pointer;
 }
 
+.nonclick {
+    cursor: default !important;
+}
+
 .maintext {
     font-size: 1.85px;
     font-style: italic;
