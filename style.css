@@ -1,11 +1,35 @@
 @namespace svg url(http://www.w3.org/2000/svg);
 
+body {
+    overflow: hidden;
+    margin: 0;
+}
+
+#mainVideo {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
 svg|a:hover {
     cursor: pointer;
 }
 
+.nonclick {
+    cursor: default !important;
+}
+
 .maintext {
     font-size: 1.85px;
+    font-style: italic;
+}
+
+#resume {
+    text-decoration: underline;
+}
+
+#imgSrc{
+    font-size: 0.75px;
     font-style: italic;
 }
 

@@ -1,3 +1,7 @@
+function landing() {
+    setTimeout(() => { document.getElementById("mainVideo").style.display = "none"; document.getElementById("mainSvg").style.display = "block";}, 3200);
+}
+
 function showDesc(stop) {
     eltCnt = document.getElementsByClassName(stop).length;// elt count per class
     for (i = 0; i < eltCnt; i++)
@@ -31,5 +35,5 @@ function giveAge() {
 function writeAge() {
     years = giveAge();
     document.getElementById("ageyears").innerHTML = `- ${years} years old`;
-    setTimeout(writeAge, 100)
+    setTimeout(writeAge, 100);
 }
